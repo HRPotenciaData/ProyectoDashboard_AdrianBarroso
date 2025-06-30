@@ -1,1 +1,48 @@
-# ProyectoDashboard_AdrianBarroso
+# 📊 Análisis de Rotación de Empleados: Exploración y Visualización de Datos de Recursos Humanos
+
+## 📖 Descripción
+Este proyecto realiza un análisis exploratorio del comportamiento de los empleados en una empresa ficticia, utilizando un dataset de Recursos Humanos proporcionado por IBM. El objetivo principal es identificar factores que influyen en la rotación voluntaria del personal, así como explorar variables relacionadas con satisfacción, desempeño y condiciones laborales.
+
+El análisis forma parte de una práctica profesional con enfoque en People Analytics, alineada con mi objetivo de emprender ofreciendo servicios de analítica avanzada para departamentos de Recursos Humanos.
+
+## 🖥️ Limpieza y Transformación de Datos
+- **Identificación y manejo de valores faltantes:** se utiliza la función `CONTAR.BLANCO` para identificar si hay valores faltantes. Al ser el resultado cero, se confirma que no hay valores faltantes.  
+- **Eliminación de duplicados:** en este set de datos no se pueden identificar valores duplicados como errores.  
+- **Manejo de valores atípicos:** se realizan controles sobre los valores acotados (por ejemplo, cuando el rango de respuesta debe estar entre 1‑4). A través de las funciones lógicas `SI` y `CONTAR.SI` se valida que no haya resultados fuera del rango establecido.  
+- **Transformación de datos:** se crean nuevas columnas para agrupar y acotar columnas ya existentes, obteniendo conjuntos de datos más manejables y facilitando el análisis.
+
+## 📂 Estructura del Proyecto
+```text
+├── data/                # Datos crudos y limpios del dataset de IBM HR
+├── notebooks/           # Documentos Excel con el análisis exploratorio y visual
+├── results/             # Gráficos, dashboards y reportes exportados
+└── README.md            # Descripción del proyecto
+```
+
+## 🛠 Instalación y Requisitos
+Este proyecto fue desarrollado utilizando **Microsoft Excel**, por lo que no requiere conocimientos de programación ni instalación de librerías adicionales.
+
+Para visualizar y explorar el análisis necesitas:
+- Microsoft Excel (versión 2016 o superior recomendada)
+- El archivo del dataset en formato `.xlsx` o `.csv`
+- (Opcional) Power Query y Power Pivot habilitados para funcionalidades más avanzadas
+
+## 📊 Resultados y Conclusiones
+- La mayor rotación se concentra en empleados con menor antigüedad y experiencia profesional.  
+- La edad de los empleados con este perfil corresponde principalmente a la **Generación Z** (18‑28 años).  
+- El departamento de **Recursos Humanos** presenta la mayor tasa de rotación.  
+- Se identificaron segmentos de empleados con alto riesgo de salida, útiles para diseñar intervenciones específicas desde RRHH.  
+- Se recomienda establecer un plan de acción específico para el perfil con mayor tasa de abandono para minimizar el perjuicio que esto ocasiona a la compañía.
+
+## 🔄 Próximos Pasos
+- Integrar un modelo predictivo básico para estimar la probabilidad de rotación.  
+- Implementar políticas para mejorar la satisfacción laboral del headcount.  
+- Establecer iniciativas enfocadas en la retención del talento junior de la compañía.
+
+## 🤝 Contribuciones
+Las contribuciones son bienvenidas. Si deseas colaborar o mejorar este análisis, por favor abre un *pull request* o una *issue*.
+
+## ✍ Autor
+**Adrián Barroso Arévalo**  
+<https://www.linkedin.com/in/adri%C3%A1n-barroso-ar%C3%A9valo-4aa69733/>
+
